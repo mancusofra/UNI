@@ -1,7 +1,7 @@
 import datetime
 
 def mio_decoratore(func):
-    def funzione_interna(*args, **kwargs):  # Aggiungi *args e **kwargs
+    def funzione_interna(*args, **kwargs):
         data_ora_corrente = datetime.datetime.now()
         with open("/home/francesco-mancuso/WORKSPACE/UNIVERSITA/Complementi/Es_classe/FileLog/Execution_log.txt", "a+") as file:
             file.write(f"Esecuzione svolta: {data_ora_corrente}.\n")
@@ -14,6 +14,5 @@ def mio_decoratore(func):
 def somma(*valori:int):
     return sum(valori)
 
-# Chiamata alla funzione decorata
 Numeri = [1,2,3]
 print(somma(*Numeri))
