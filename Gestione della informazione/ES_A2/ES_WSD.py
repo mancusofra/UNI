@@ -1,6 +1,6 @@
 from nltk.corpus import wordnet as wn
 from nltk.corpus import wordnet_ic
-
+#none
 def disambiguateTerms(terms):
     for t_i in terms: # t_i is target term
         #INIZIALIZZAZIONE DELLE VARIABILI
