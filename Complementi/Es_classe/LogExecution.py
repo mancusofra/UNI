@@ -3,7 +3,7 @@ import datetime
 def mio_decoratore(func):
     def funzione_interna(*args, **kwargs):
         data_ora_corrente = datetime.datetime.now()
-        with open("/home/francesco-mancuso/WORKSPACE/UNIVERSITA/Complementi/Es_classe/FileLog/Execution_log.txt", "a+") as file:
+        with open("/home/francesco/UNI/Complementi/Es_classe/FileLog/Execution_log.txt", "a+") as file:
             file.write(f"Esecuzione svolta: {data_ora_corrente}.\n")
 
         print("Scrittura completata.")
